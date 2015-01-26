@@ -1,0 +1,21 @@
+This model works with OMNeT++ v. 2.2
+
+To run the simulator just:
+
+- type opp_makemake
+- type make
+- type adHocSim
+
+
+The omnetpp.ini file contains almost all the parameters needed.
+Editing the Ini/mobility.ini  file you can choose the mobility model to use.
+
+The 'script' shell script executes many runs with different speeds and seeds.
+
+The NewAwk directory contains some awk and shell script that generate graph with
+gnuplot processing the 'collectedData.dat' simulator output file.
+
+Roughly patched up for OMNeT++ 3.0 Andras Varga 2005 January.
+
+
+
