@@ -33,10 +33,10 @@ network Red
     parameters:
         int numNodes = default(1);
 
-        @display("bgb=471,255");
+        @display("bgb=564,255");
     submodules:
         modulo[numNodes]: Modulo {
-            @display("p=325,157;i=device/pocketpc;is=vs");
+            @display("p=272,161;i=device/pocketpc;is=vs");
         }
         configurator: IPv4NetworkConfigurator {
             parameters:
@@ -44,18 +44,18 @@ network Red
                 addStaticRoutes = false;
                 addSubnetRoutes = false;
                 config = xml("<config><interface hosts='*' address='192.168.x.x' netmask = '255.255.0.0' /> </config>");
-                @display("p=45,115");
+                @display("p=245,20;is=vs");
         }
         routingTableRecorder: RoutingTableRecorder {
-            @display("p=45,70");
+            @display("p=147,20;is=vs");
         }
         scenarioManager: ScenarioManager {
-            @display("p=45,161");
+            @display("p=330,20;is=vs");
         }
         lifecycleController: LifecycleController {
-            @display("p=45,208");
+            @display("p=435,20;is=vs");
         }
         channelControl: IdealChannelModel {
-            @display("p=62,27");
+            @display("p=46,20;is=vs");
         }
 }

@@ -1,0 +1,81 @@
+[General]
+network = Red
+sim-time-limit = 3000s
+num-rngs=3
+**.mobility.rng-0=1
+**.wlan[*].mac.rng-0=2
+tkenv-plugin-path = ../../../etc/plugins
+*.numNodes = 
+
+# Mobilidade dos nós
+
+**.modulo[*].mobilityType = "MassMobility"
+**.mobility.constraintAreaMaxX = 600m
+**.mobility.constraintAreaMaxY = 600m
+**.mobility.constraintAreaMinX = 0m
+**.mobility.constraintAreaMinY = 0m
+**.mobility.constraintAreaMinZ = 0m
+**.mobility.constraintAreaMaxZ = 0m
+
+**.aodv.activeRouteTimeout = 3s
+**.modulo[*].mobility.changeInterval = normal(5s, 0.1s)
+**.modulo[*].mobility.changeAngleBy = normal(0deg, 30deg)
+**.modulo[*].mobility.speed = normal(15mps, 0.01mps)
+**.modulo[*].constraintAreaMaxX = 50m
+**.modulo[*].constraintAreaMaxY = 50m
+
+
+#ping
+*.modulo[0].numPingApps = 1
+*.modulo[0].pingApp[0].startTime= uniform(1s,5s)
+*.modulo[0].pingApp[0].printPing = true
+
+
+# nic settings
+**.wlan[*].typename = "IdealWirelessNic"
+**.wlan[*].bitrate = 2Mbps
+**.wlan[*].mgmt.frameCapacity = 10
+**.wlan[*].mac.address = "auto"
+**.wlan[*].mac.maxQueueSize = 14
+**.wlan[*].mac.rtsThresholdBytes = 3000B
+**.wlan[*].mac.retryLimit = 7
+**.wlan[*].mac.cwMinData = 7
+**.wlan[*].mac.cwMinMulticast = 31
+**.wlan[*].mac.headerLength = 10B
+
+
+
+#ciclo de vida 
+**.hasStatus = true
+
+
+**.wlan[*].radio.transmissionRange = 90m
+
+[Config CircleMobility]
+*.numNodes = 9
+**.modulo[0..2].mobilityType = "CircleMobility"
+**.modulo[0..2].mobility.cx = 150m
+**.modulo[0..2].mobility.cy = 150m
+**.modulo[0..2].mobility.r = 75m
+**.modulo[0..2].mobility.speed = 40mps
+**.modulo[0].mobility.startAngle = 30deg
+**.modulo[1].mobility.startAngle = 60deg
+**.modulo[2].mobility.startAngle = 120deg
+**.modulo[3].mobility.updateInterval = 100ms
+
+
+
+**.modulo*.mobility.updateInterval = 100ms
+
+**.modulo[0].numPingApps = 1
+**.modulo[0].pingApp[0].startTime = uniform(1s,5s)
+**.modulo[0].pingApp[0].printPing = true
+**.modulo[0].pingApp[0].destAddr = "modulo[3](ipv4)"
+
+**.modulo[3].mobilityType = "StationaryMobility"
+**.modulo[3].numPingApps = 1
+**.modulo[3].pingApp[3].startTime = uniform(1s,5s)
+**.modulo[3].pingApp[3].printPing = true
+**.modulo[3].pingApp[3].destAddr = "modulo[0](ipv4)"
+
+**.aodv.helloInterval = 5s

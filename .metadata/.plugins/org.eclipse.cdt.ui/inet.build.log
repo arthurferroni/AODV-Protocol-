@@ -1,11 +1,8 @@
-14:29:57 **** Incremental Build of configuration gcc-debug for project inet ****
+14:40:12 **** Incremental Build of configuration gcc-debug for project inet ****
 make MODE=debug CONFIGNAME=gcc-debug -j4 all 
 cd src && make
 make[1]: Entering directory `/c/Users/Arthur/Desktop/WORK/inet-2.5.0/src'
-ln: cannot remove `./libinet.dll': Permission denied
-make[1]: *** [all] Error 1
 make[1]: Leaving directory `/c/Users/Arthur/Desktop/WORK/inet-2.5.0/src'
-make: *** [all] Error 2
 
-14:30:02 Build Finished (took 4s.560ms)
+14:40:17 Build Finished (took 4s.896ms)
 

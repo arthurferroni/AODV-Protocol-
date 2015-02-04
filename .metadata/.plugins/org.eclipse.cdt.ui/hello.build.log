@@ -1,11 +1,8 @@
-14:30:03 **** Incremental Build of configuration gcc-debug for project hello ****
+14:40:18 **** Incremental Build of configuration gcc-debug for project hello ****
 make MODE=debug CONFIGNAME=gcc-debug all 
 cd src && make
 make[1]: Entering directory `/c/Users/Arthur/Documents/GitHub/AODV-Protocol-/hello/src'
-ln: cannot remove `./hello.exe': Permission denied
-make[1]: *** [all] Error 1
 make[1]: Leaving directory `/c/Users/Arthur/Documents/GitHub/AODV-Protocol-/hello/src'
-make: *** [all] Error 2
 
-14:30:04 Build Finished (took 632ms)
+14:40:18 Build Finished (took 692ms)
 
