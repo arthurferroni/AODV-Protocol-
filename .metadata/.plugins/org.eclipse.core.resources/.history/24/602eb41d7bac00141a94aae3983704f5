@@ -49,22 +49,5 @@ tkenv-plugin-path = ../../../etc/plugins
 **.hasStatus = true
 
 
-**.wlan[*].radio.transmissionRange = 90m
-
-[Config CircleMobility]
-*.numHosts = 4
-**.modulo[4].mobilityType = "MassMobility"
-**.modulo*.mobilityType = "CircleMobility"
-**.modulo*.mobility.cx = 150m
-**.modulo*.mobility.cy = 150m
-**.modulo*.mobility.r = 75m
-**.modulo*.mobility.speed = 40mps
-**.modulo[0].mobility.startAngle = 30deg
-**.modulo[1].mobility.startAngle = 60deg
-**.modulo[2].mobility.startAngle = 120deg
-**.modulo*.mobility.updateInterval = 100ms
-**.modulo[0].numPingApps = 1
-**.modulo[0].pingApp[0].startTime = uniform(1s,5s)
-**.modulo[0].pingApp[0].printPing = true
-**.modulo[0].pingApp[0].destAddr = "modulo[2](ipv4)"
+**.wlan[*].radio.transmissionRange = 50m
 

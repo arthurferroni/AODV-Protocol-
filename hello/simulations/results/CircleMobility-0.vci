@@ -1,0 +1,149 @@
+file 17588 1423061095                                           
+version 2
+run CircleMobility-0-20150204-12:43:35-5264
+attr configname CircleMobility
+attr datetime 20150204-12:43:35
+attr experiment CircleMobility
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Red
+attr processid 5264
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 13  Red.modulo[0].wlan[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 27  Red.modulo[1].wlan[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 41  Red.modulo[2].wlan[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 3  Red.modulo[0].pingApp[0]  pingTxSeq:vector  ETV
+attr interpolationmode  none
+attr title  "ping tx seq, vector"
+vector 10  Red.modulo[0].wlan[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 12  Red.modulo[0].wlan[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 16  Red.modulo[0].wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 15  Red.modulo[0].wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 31  Red.modulo[1].wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 28  Red.modulo[1].wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 24  Red.modulo[1].wlan[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 26  Red.modulo[1].wlan[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 30  Red.modulo[1].wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 29  Red.modulo[1].wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 17  Red.modulo[0].wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 14  Red.modulo[0].wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 45  Red.modulo[2].wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 42  Red.modulo[2].wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 33  Red.modulo[2].networkLayer.arp  sentReq:vector  ETV
+attr title  "ARP request sent, vector"
+vector 38  Red.modulo[2].wlan[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 40  Red.modulo[2].wlan[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 44  Red.modulo[2].wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 43  Red.modulo[2].wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 20  Red.modulo[1].networkLayer.arp  sentReply:vector  ETV
+attr title  "ARP replies sent, vector"
+vector 18  Red.modulo[0].wlan[0].mac  droppedPkNotForUs:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, vector(packetBytes)"
+vector 19  Red.modulo[1].networkLayer.arp  sentReq:vector  ETV
+attr title  "ARP request sent, vector"
+vector 6  Red.modulo[0].networkLayer.arp  sentReply:vector  ETV
+attr title  "ARP replies sent, vector"
+vector 46  Red.modulo[2].wlan[0].mac  droppedPkNotForUs:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, vector(packetBytes)"
+vector 4  Red.modulo[0].pingApp[0]  pingRxSeq:vector  ETV
+attr interpolationmode  none
+attr title  "ping rx seq, vector"
+vector 0  Red.modulo[0].pingApp[0]  rtt:vector  ETV
+attr interpolationmode  none
+attr title  "ping round-trip time, vector"
+attr unit  s
+0	5402 451 253 1119 3.208481785874 14.196630768561 12 0.001376759344 0.013227776657 0.028372129441 0.00019582420449168
+3	5853 323 112 1156 3.195254009217 15.195254009217 13 0 12 78 650
+4	6176 297 253 1119 3.208481785874 14.196630768561 12 0 11 66 506
+6	6473 24 187 187 3.206832767532 3.206832767532 1 1 1 1 1
+10	6497 398 116 1159 3.198218232298 15.195254009217 15 20 76 1036 76272
+12	6895 383 116 1159 3.198218232298 15.195254009217 15 0 0 0 0
+13	7278 10 0 0 0 0 1 0 0 0 0
+14	7288 395 136 1116 3.20203443812 14.196630768561 15 20 76 980 70896
+15	7683 398 117 1160 3.198218232298 15.195254009217 15 30 86 1186 98492
+16	8081 398 117 1160 3.198218232298 15.195254009217 15 20 76 1036 76272
+17	8479 768 136 1174 3.20203443812 15.195942268215 29 30 86 2286 189588
+18	9247 373 162 1174 3.202338938466 15.195942268215 14 38 86 1156 97592
+19	9620 25 176 176 3.206680638033 3.206680638033 1 1 1 1 1
+20	9645 25 153 153 3.202186808967 3.202186808967 1 1 1 1 1
+24	9670 798 129 1189 3.201914308621 15.196286639062 30 20 76 2072 152544
+26	10468 768 129 1189 3.201914308621 15.196286639062 30 0 0 0 0
+27	11236 10 0 0 0 0 1 0 0 0 0
+28	11246 798 122 1187 3.198338361797 15.196286639062 30 20 76 2072 152544
+29	12044 798 130 1190 3.201914308621 15.196286639062 30 30 86 2372 196984
+30	12842 798 130 1190 3.201914308621 15.196286639062 30 20 76 2072 152544
+31	13640 798 122 1187 3.198338361797 15.196286639062 30 30 86 2372 196984
+33	14438 25 143 143 3.202034558794 3.202034558794 1 1 1 1 1
+38	14463 398 145 1181 3.202034558794 15.195942388889 15 20 76 1036 76272
+40	14861 383 145 1181 3.202034558794 15.195942388889 15 0 0 0 0
+41	15244 10 0 0 0 0 1 0 0 0 0
+42	15254 424 140 1177 3.202034558794 15.195942388889 16 20 76 1064 77056
+43	15678 398 146 1182 3.202034558794 15.195942388889 15 30 86 1186 98492
+44	16076 398 146 1182 3.202034558794 15.195942388889 15 20 76 1036 76272
+45	16474 769 140 1177 3.202034558794 15.195942388889 29 30 86 2286 189588
+46	17243 345 216 1121 3.207105147204 14.196630889235 13 30 86 1062 89652

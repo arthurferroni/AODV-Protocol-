@@ -1,0 +1,484 @@
+version 2
+run CircleMobility-0-20150204-12:43:35-5264
+attr configname CircleMobility
+attr datetime 20150204-12:43:35
+attr experiment CircleMobility
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Red
+attr processid 5264
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+scalar Red 	hackForCreateResultsFolder 	0
+scalar Red.modulo[0].networkLayer.arp 	initiatedARPResolution:count 	0
+attr title  "ARP initiated resolutions, count"
+scalar Red.modulo[0].networkLayer.arp 	sentReply:count 	1
+attr title  "ARP replies sent, count"
+scalar Red.modulo[0].networkLayer.arp 	sentReq:count 	0
+attr title  "ARP request sent, count"
+scalar Red.modulo[0].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar Red.modulo[0].networkLayer.arp 	completedARPResolution:count 	1
+attr title  "ARP completed resolutions, count"
+scalar Red.modulo[0].lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar Red.modulo[0].lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar Red.modulo[0].lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Red.modulo[0].lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Red.modulo[0].lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Red.modulo[0].lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+statistic Red.modulo[0].wlan[0].queue 	queueingTime:histogram
+field count 15
+field mean 0
+field stddev 0
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr title  "queueing time, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	-6.9388939039072e-018	15
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar Red.modulo[0].wlan[0].queue 	dropPk:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, count"
+scalar Red.modulo[0].wlan[0].queue 	dropPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, sum(packetBytes)"
+scalar Red.modulo[0].wlan[0].queue 	queueLength:max 	0
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar Red.modulo[0].wlan[0].queue 	queueLength:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+scalar Red.modulo[0].wlan[0].queue 	rcvdPk:count 	15
+attr interpolationmode  none
+attr title  "received packets, count"
+scalar Red.modulo[0].wlan[0].queue 	rcvdPk:sum(packetBytes) 	1036
+attr interpolationmode  none
+attr title  "received packets, sum(packetBytes)"
+scalar Red.modulo[0].wlan[0].mac 	droppedPkNotForUs:count 	14
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar Red.modulo[0].wlan[0].mac 	droppedPkNotForUs:sum(packetBytes) 	1156
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar Red.modulo[0].wlan[0].mac 	rcvdPkFromHL:count 	15
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar Red.modulo[0].wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	1036
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar Red.modulo[0].wlan[0].mac 	passedUpPk:count 	15
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Red.modulo[0].wlan[0].mac 	passedUpPk:sum(packetBytes) 	980
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Red.modulo[0].wlan[0].mac 	rcvdPkFromLL:count 	29
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar Red.modulo[0].wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	2286
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar Red.modulo[0].wlan[0].mac 	sentDownPk:count 	15
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar Red.modulo[0].wlan[0].mac 	sentDownPk:sum(packetBytes) 	1186
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar Red.modulo[0].pingApp[0] 	"Pings sent" 	13
+scalar Red.modulo[0].pingApp[0] 	"ping loss rate (%)" 	7.6923076923077
+scalar Red.modulo[0].pingApp[0] 	"ping out-of-order rate (%)" 	0
+scalar Red.modulo[0].pingApp[0] 	numOutOfOrderArrivals:last 	-1.#IND
+attr interpolationmode  none
+attr title  "ping out-of-order arrivals, last"
+scalar Red.modulo[0].pingApp[0] 	pingRxSeq:count 	12
+attr interpolationmode  none
+attr title  "ping rx seq, count"
+scalar Red.modulo[0].pingApp[0] 	pingTxSeq:count 	13
+attr interpolationmode  none
+attr title  "ping tx seq, count"
+scalar Red.modulo[0].pingApp[0] 	numLost:last 	-1.#IND
+attr interpolationmode  none
+attr title  "pings lost, last"
+statistic Red.modulo[0].pingApp[0] 	rtt:histogram
+field count 12
+field mean 0.0023643441200833
+field stddev 0.0034210940179157
+field sum 0.028372129441
+field sqrsum 0.00019582420449168
+field min 0.001376759344
+field max 0.013227776657
+attr interpolationmode  none
+attr title  "ping round-trip time, histogram"
+attr unit  s
+bin	-INF	0
+bin	-0.0045487493125	0
+bin	-0.0037586814916333	0
+bin	-0.0029686136707667	0
+bin	-0.0021785458499	0
+bin	-0.0013884780290333	0
+bin	-0.00059841020816667	0
+bin	0.0001916576127	0
+bin	0.00098172543356667	11
+bin	0.0017717932544333	0
+bin	0.0025618610753	0
+bin	0.0033519288961667	0
+bin	0.0041419967170333	0
+bin	0.0049320645379	0
+bin	0.0057221323587667	0
+bin	0.0065122001796333	0
+bin	0.0073022680005	0
+bin	0.0080923358213667	0
+bin	0.0088824036422333	0
+bin	0.0096724714631	0
+bin	0.010462539283967	0
+bin	0.011252607104833	0
+bin	0.0120426749257	0
+bin	0.012832742746567	1
+bin	0.013622810567433	0
+bin	0.0144128783883	0
+bin	0.015202946209167	0
+bin	0.015993014030033	0
+bin	0.0167830818509	0
+bin	0.017573149671767	0
+bin	0.018363217492633	0
+bin	0.0191532853135	0
+scalar Red.modulo[1].networkLayer.arp 	initiatedARPResolution:count 	1
+attr title  "ARP initiated resolutions, count"
+scalar Red.modulo[1].networkLayer.arp 	sentReply:count 	1
+attr title  "ARP replies sent, count"
+scalar Red.modulo[1].networkLayer.arp 	sentReq:count 	1
+attr title  "ARP request sent, count"
+scalar Red.modulo[1].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar Red.modulo[1].networkLayer.arp 	completedARPResolution:count 	2
+attr title  "ARP completed resolutions, count"
+scalar Red.modulo[1].lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar Red.modulo[1].lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar Red.modulo[1].lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Red.modulo[1].lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Red.modulo[1].lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Red.modulo[1].lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+statistic Red.modulo[1].wlan[0].queue 	queueingTime:histogram
+field count 30
+field mean 0
+field stddev 0
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr title  "queueing time, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	-6.9388939039072e-018	30
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar Red.modulo[1].wlan[0].queue 	dropPk:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, count"
+scalar Red.modulo[1].wlan[0].queue 	dropPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, sum(packetBytes)"
+scalar Red.modulo[1].wlan[0].queue 	queueLength:max 	0
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar Red.modulo[1].wlan[0].queue 	queueLength:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+scalar Red.modulo[1].wlan[0].queue 	rcvdPk:count 	30
+attr interpolationmode  none
+attr title  "received packets, count"
+scalar Red.modulo[1].wlan[0].queue 	rcvdPk:sum(packetBytes) 	2072
+attr interpolationmode  none
+attr title  "received packets, sum(packetBytes)"
+scalar Red.modulo[1].wlan[0].mac 	droppedPkNotForUs:count 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar Red.modulo[1].wlan[0].mac 	droppedPkNotForUs:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar Red.modulo[1].wlan[0].mac 	rcvdPkFromHL:count 	30
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar Red.modulo[1].wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	2072
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar Red.modulo[1].wlan[0].mac 	passedUpPk:count 	30
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Red.modulo[1].wlan[0].mac 	passedUpPk:sum(packetBytes) 	2072
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Red.modulo[1].wlan[0].mac 	rcvdPkFromLL:count 	30
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar Red.modulo[1].wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	2372
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar Red.modulo[1].wlan[0].mac 	sentDownPk:count 	30
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar Red.modulo[1].wlan[0].mac 	sentDownPk:sum(packetBytes) 	2372
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"
+scalar Red.modulo[2].networkLayer.arp 	initiatedARPResolution:count 	1
+attr title  "ARP initiated resolutions, count"
+scalar Red.modulo[2].networkLayer.arp 	sentReply:count 	0
+attr title  "ARP replies sent, count"
+scalar Red.modulo[2].networkLayer.arp 	sentReq:count 	1
+attr title  "ARP request sent, count"
+scalar Red.modulo[2].networkLayer.arp 	failedARPResolution:count 	0
+attr title  "ARP failed resolutions, count"
+scalar Red.modulo[2].networkLayer.arp 	completedARPResolution:count 	2
+attr title  "ARP completed resolutions, count"
+scalar Red.modulo[2].lo0.lo 	rcvdPkFromHL:count 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar Red.modulo[2].lo0.lo 	rcvdPkFromHL:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar Red.modulo[2].lo0.lo 	passedUpPk:count 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Red.modulo[2].lo0.lo 	passedUpPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Red.modulo[2].lo0.lo 	droppedPkBitError:count 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, count"
+scalar Red.modulo[2].lo0.lo 	droppedPkBitError:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkBitError
+attr title  "packets dropped/bit error, sum(packetBytes)"
+statistic Red.modulo[2].wlan[0].queue 	queueingTime:histogram
+field count 15
+field mean 0
+field stddev 0
+field sum 0
+field sqrsum 0
+field min 0
+field max 0
+attr interpolationmode  none
+attr title  "queueing time, histogram"
+bin	-INF	0
+bin	-0.5	0
+bin	-0.46666666666667	0
+bin	-0.43333333333333	0
+bin	-0.4	0
+bin	-0.36666666666667	0
+bin	-0.33333333333333	0
+bin	-0.3	0
+bin	-0.26666666666667	0
+bin	-0.23333333333333	0
+bin	-0.2	0
+bin	-0.16666666666667	0
+bin	-0.13333333333333	0
+bin	-0.1	0
+bin	-0.066666666666667	0
+bin	-0.033333333333333	0
+bin	-6.9388939039072e-018	15
+bin	0.033333333333333	0
+bin	0.066666666666667	0
+bin	0.1	0
+bin	0.13333333333333	0
+bin	0.16666666666667	0
+bin	0.2	0
+bin	0.23333333333333	0
+bin	0.26666666666667	0
+bin	0.3	0
+bin	0.33333333333333	0
+bin	0.36666666666667	0
+bin	0.4	0
+bin	0.43333333333333	0
+bin	0.46666666666667	0
+bin	0.5	0
+scalar Red.modulo[2].wlan[0].queue 	dropPk:count 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, count"
+scalar Red.modulo[2].wlan[0].queue 	dropPk:sum(packetBytes) 	0
+attr interpolationmode  none
+attr source  dropPkByQueue
+attr title  "dropped packets, sum(packetBytes)"
+scalar Red.modulo[2].wlan[0].queue 	queueLength:max 	0
+attr interpolationmode  sample-hold
+attr title  "queue length, max"
+scalar Red.modulo[2].wlan[0].queue 	queueLength:timeavg 	0
+attr interpolationmode  sample-hold
+attr title  "queue length, timeavg"
+scalar Red.modulo[2].wlan[0].queue 	rcvdPk:count 	15
+attr interpolationmode  none
+attr title  "received packets, count"
+scalar Red.modulo[2].wlan[0].queue 	rcvdPk:sum(packetBytes) 	1036
+attr interpolationmode  none
+attr title  "received packets, sum(packetBytes)"
+scalar Red.modulo[2].wlan[0].mac 	droppedPkNotForUs:count 	13
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, count"
+scalar Red.modulo[2].wlan[0].mac 	droppedPkNotForUs:sum(packetBytes) 	1062
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, sum(packetBytes)"
+scalar Red.modulo[2].wlan[0].mac 	rcvdPkFromHL:count 	15
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, count"
+scalar Red.modulo[2].wlan[0].mac 	rcvdPkFromHL:sum(packetBytes) 	1036
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, sum(packetBytes)"
+scalar Red.modulo[2].wlan[0].mac 	passedUpPk:count 	16
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, count"
+scalar Red.modulo[2].wlan[0].mac 	passedUpPk:sum(packetBytes) 	1064
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, sum(packetBytes)"
+scalar Red.modulo[2].wlan[0].mac 	rcvdPkFromLL:count 	29
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, count"
+scalar Red.modulo[2].wlan[0].mac 	rcvdPkFromLL:sum(packetBytes) 	2286
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, sum(packetBytes)"
+scalar Red.modulo[2].wlan[0].mac 	sentDownPk:count 	15
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, count"
+scalar Red.modulo[2].wlan[0].mac 	sentDownPk:sum(packetBytes) 	1186
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, sum(packetBytes)"

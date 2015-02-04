@@ -36,7 +36,7 @@ network Red
         @display("bgb=471,255");
     submodules:
         modulo[numNodes]: Modulo {
-            @display("p=325,157;i=device/pocketpc;is=vs");
+            @display("p=254,78;i=device/pocketpc;is=vs");
         }
         configurator: IPv4NetworkConfigurator {
             parameters:

@@ -152,6 +152,7 @@
 <includePath path="C:\Users\Arthur\Desktop\WORK\inet-2.5.0\src\applications\ethernet"/>
 <includePath path="C:\Users\Arthur\Desktop\WORK\inet-2.5.0\src\applications\dhcp"/>
 <includePath path="C:\Users\Arthur\Desktop\WORK\inet-2.5.0\src\applications\common"/>
+<includePath path="C:\Users\Arthur\Documents\GitHub\AODV-Protocol-\hello\simulations\results"/>
 <definedSymbol symbol="__STDC__=1"/>
 <definedSymbol symbol="__cplusplus=199711L"/>
 <definedSymbol symbol="__STDC_HOSTED__=1"/>
