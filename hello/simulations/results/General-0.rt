@@ -1,0 +1,36 @@
+*I  0  0  2  lo0 <unspec>
+*I  0  0  2  lo0 127.0.0.1
+*I  0  0  2  lo0 127.0.0.1
+*I  0  0  2  lo0 127.0.0.1
+*I  0  0  2  wlan0 <unspec>
+*I  0  0  2  wlan0 <unspec>
+*I  0  0  2  wlan0 <unspec>
+*I  0  0  2  wlan0 <unspec>
+*I  0  0  3  lo0 <unspec>
+*I  0  0  3  lo0 127.0.0.1
+*I  0  0  3  lo0 127.0.0.1
+*I  0  0  3  lo0 127.0.0.1
+*I  0  0  3  wlan0 <unspec>
+*I  0  0  3  wlan0 <unspec>
+*I  0  0  3  wlan0 <unspec>
+*I  0  0  3  wlan0 <unspec>
+*I  0  0  4  lo0 <unspec>
+*I  0  0  4  lo0 127.0.0.1
+*I  0  0  4  lo0 127.0.0.1
+*I  0  0  4  lo0 127.0.0.1
+*I  0  0  4  wlan0 <unspec>
+*I  0  0  4  wlan0 <unspec>
+*I  0  0  4  wlan0 <unspec>
+*I  0  0  4  wlan0 <unspec>
+*I  0  0  2  wlan0 192.168.0.1
+*I  0  0  2  wlan0 192.168.0.1
+*I  0  0  3  wlan0 192.168.0.2
+*I  0  0  3  wlan0 192.168.0.2
+*I  0  0  4  wlan0 192.168.0.3
+*I  0  0  4  wlan0 192.168.0.3
++R 0  0  2  192.168.0.1  127.0.0.0  255.0.0.0  <unspec>
++R 0  0  2  192.168.0.1  192.168.0.0  255.255.0.0  <unspec>
++R 0  0  3  192.168.0.2  127.0.0.0  255.0.0.0  <unspec>
++R 0  0  3  192.168.0.2  192.168.0.0  255.255.0.0  <unspec>
++R 0  0  4  192.168.0.3  127.0.0.0  255.0.0.0  <unspec>
++R 0  0  4  192.168.0.3  192.168.0.0  255.255.0.0  <unspec>

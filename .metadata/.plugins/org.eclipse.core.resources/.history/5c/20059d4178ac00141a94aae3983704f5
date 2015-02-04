@@ -1,0 +1,54 @@
+[General]
+network = Red
+sim-time-limit = 3000s
+num-rngs=3
+**.mobility.rng-0=1
+**.wlan[*].mac.rng-0=2
+tkenv-plugin-path = ../../../etc/plugins
+*.numNodes = 3
+
+# Mobilidade dos nós
+
+**.modulo[*].mobilityType = "MassMobility"
+**.mobility.constraintAreaMaxX = 600m
+**.mobility.constraintAreaMaxY = 600m
+**.mobility.constraintAreaMinX = 0m
+**.mobility.constraintAreaMinY = 0m
+**.mobility.constraintAreaMinZ = 0m
+**.mobility.constraintAreaMaxZ = 0m
+
+**.aodv.activeRouteTimeout = 3s
+**.modulo[*].mobility.changeInterval = normal(5s, 0.1s)
+**.modulo[*].mobility.changeAngleBy = normal(0deg, 30deg)
+**.modulo[*].mobility.speed = normal(2mps, 0.01mps)
+
+
+
+#ping
+*.modulo[0].numPingApps = 1
+*.modulo[0].pingApp[0].startTime= uniform(1s,5s)
+*.modulo[0].pingApp[0].printPing = true
+
+#nic configurações
+**.wlan[*].typename ="IdealWirelessNic"
+**.wlan[*].bitrate = 2Mbps
+**.wlan[*].mgmt.frameCapacity = 10
+**.wlan[*].mac.address ="auto"
+**.wlan[*].mac.maxQueueSize=5
+**.wlan[*].mac.rtsThresholdBytes=3000B
+**.wlan[*].mac.retryLimit = 7
+**.wlan[*].mac.cwMinData = 7
+**.wlan[*].mac.cwMinMulticast = 31
+**.wlan[*].mac.headerLength = 10B
+
+
+
+#ciclo de vida 
+**.hasStatus = true
+
+
+**.wlan[*].radio.transmissionRange = 240m
+**.modulo[0].numPingApps = 1
+**.modulo[0].pingApp[0].starTime = uniform(1s,5s)
+**.modulo[0].pingApp[0].printPing = true
+**.modulo[0].pingApp[0].destAddr="modulo[1] (ipv4)"

@@ -1,0 +1,8 @@
+12:23:27 **** Incremental Build of configuration gcc-debug for project hello ****
+make MODE=debug CONFIGNAME=gcc-debug all 
+cd src && make
+make[1]: Entering directory `/c/Users/Arthur/Documents/GitHub/AODV-Protocol-/hello/src'
+make[1]: Leaving directory `/c/Users/Arthur/Documents/GitHub/AODV-Protocol-/hello/src'
+
+12:23:27 Build Finished (took 531ms)
+

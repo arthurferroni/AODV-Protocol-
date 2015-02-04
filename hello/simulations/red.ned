@@ -38,12 +38,13 @@ network Red
         modulo[numNodes]: Modulo {
             @display("p=418,192");
         }
-        configuracao: IPv4NetworkConfigurator {
-            addDefaultRoutes = false;
-            addStaticRoutes = false;
-            addSubnetRoutes = false;
-            config = xml("<config><interface hosts='*' address='192.168.x.x' netmask = '255.255.0.0' /> </config>");
-            @display("p=45,115");
+        configurator: IPv4NetworkConfigurator {
+            parameters:
+                addDefaultRoutes = false;
+                addStaticRoutes = false;
+                addSubnetRoutes = false;
+                config = xml("<config><interface hosts='*' address='192.168.x.x' netmask = '255.255.0.0' /> </config>");
+                @display("p=45,115");
         }
         routingTableRecorder: RoutingTableRecorder {
             @display("p=45,70");
@@ -54,7 +55,7 @@ network Red
         lifecycleController: LifecycleController {
             @display("p=45,208");
         }
-        idealChannelModel: IdealChannelModel {
-            @display("p=45,30");
+        channelControl: IdealChannelModel {
+            @display("p=62,27");
         }
 }

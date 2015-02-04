@@ -1,0 +1,30 @@
+file 822 1423059830                                             
+version 2
+run General-0-20150204-12:23:35-11372
+attr configname General
+attr datetime 20150204-12:23:35
+attr experiment General
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Red
+attr processid 11372
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 13  Red.modulo[0].wlan[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 27  Red.modulo[1].wlan[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 41  Red.modulo[2].wlan[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+13	792 10 0 0 0 0 1 0 0 0 0
+27	802 10 0 0 0 0 1 0 0 0 0
+41	812 10 0 0 0 0 1 0 0 0 0
