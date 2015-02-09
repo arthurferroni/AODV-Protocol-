@@ -50,7 +50,7 @@ tkenv-plugin-path = ../../../etc/plugins
 
 
 **.wlan[*].radio.transmissionRange = 90m
-# aparte da movimentação dos 3 nós
+# aparte da movimentação 
 [Config CircleMobility]
 *.numNodes = 4
 **.modulo[0..2].mobilityType = "CircleMobility"

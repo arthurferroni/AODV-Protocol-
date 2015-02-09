@@ -616,3 +616,13 @@ make MODE=debug CONFIGNAME=gcc-debug all
 cd src && make
 make[1]: Entering directory `/c/Users/Arthur/Documents/GitHub/AODV-Protocol-/hello/src'
 make[1]: Leaving directory `/c/Users/Arthur/Documents/GitHub/AODV-Protocol-/hello/src'
+15:26:24 **** Incremental Build of configuration gcc-debug for project inet ****
+make MODE=debug CONFIGNAME=gcc-debug -j4 all 
+cd src && make
+make[1]: Entering directory `/c/Users/Arthur/Desktop/WORK/inet-2.5.0/src'
+make[1]: Leaving directory `/c/Users/Arthur/Desktop/WORK/inet-2.5.0/src'
+15:26:33 **** Incremental Build of configuration gcc-debug for project hello ****
+make MODE=debug CONFIGNAME=gcc-debug all 
+cd src && make
+make[1]: Entering directory `/c/Users/Arthur/Documents/GitHub/AODV-Protocol-/hello/src'
+make[1]: Leaving directory `/c/Users/Arthur/Documents/GitHub/AODV-Protocol-/hello/src'

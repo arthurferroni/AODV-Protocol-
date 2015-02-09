@@ -1,15 +1,15 @@
-file 43603 1423068331                                           
+                                                                
 version 2
-run CircleMobility-0-20150204-14:40:27-19308
+run CircleMobility-0-20150204-15:26:45-23980
 attr configname CircleMobility
-attr datetime 20150204-14:40:27
+attr datetime 20150204-15:26:45
 attr experiment CircleMobility
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvars2 $repetition=0
 attr measurement ""
 attr network Red
-attr processid 19308
+attr processid 23980
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -26,21 +26,6 @@ vector 41  Red.modulo[2].wlan[0].queue  queueLength:vector  ETV
 attr interpolationmode  sample-hold
 attr title  "queue length, vector"
 vector 55  Red.modulo[3].wlan[0].queue  queueLength:vector  ETV
-attr interpolationmode  sample-hold
-attr title  "queue length, vector"
-vector 69  Red.modulo[4].wlan[0].queue  queueLength:vector  ETV
-attr interpolationmode  sample-hold
-attr title  "queue length, vector"
-vector 83  Red.modulo[5].wlan[0].queue  queueLength:vector  ETV
-attr interpolationmode  sample-hold
-attr title  "queue length, vector"
-vector 97  Red.modulo[6].wlan[0].queue  queueLength:vector  ETV
-attr interpolationmode  sample-hold
-attr title  "queue length, vector"
-vector 111  Red.modulo[7].wlan[0].queue  queueLength:vector  ETV
-attr interpolationmode  sample-hold
-attr title  "queue length, vector"
-vector 125  Red.modulo[8].wlan[0].queue  queueLength:vector  ETV
 attr interpolationmode  sample-hold
 attr title  "queue length, vector"
 vector 3  Red.modulo[0].pingApp[0]  pingTxSeq:vector  ETV
@@ -112,14 +97,6 @@ vector 43  Red.modulo[2].wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
 attr interpolationmode  none
 attr source  packetSentToLower
 attr title  "packets sent to lower layer, vector(packetBytes)"
-vector 115  Red.modulo[7].wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
-attr interpolationmode  none
-attr source  packetReceivedFromLower
-attr title  "packets received from lower layer, vector(packetBytes)"
-vector 112  Red.modulo[7].wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
-attr interpolationmode  none
-attr source  packetSentToUpper
-attr title  "packets passed to higher layer, vector(packetBytes)"
 vector 59  Red.modulo[3].wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
 attr interpolationmode  none
 attr source  packetReceivedFromLower
@@ -150,50 +127,10 @@ vector 32  Red.modulo[1].wlan[0].mac  droppedPkNotForUs:vector(packetBytes)  ETV
 attr interpolationmode  none
 attr source  dropPkNotForUs
 attr title  "packets dropped/not for us, vector(packetBytes)"
-vector 116  Red.modulo[7].wlan[0].mac  droppedPkNotForUs:vector(packetBytes)  ETV
-attr interpolationmode  none
-attr source  dropPkNotForUs
-attr title  "packets dropped/not for us, vector(packetBytes)"
-vector 108  Red.modulo[7].wlan[0].queue  rcvdPk:vector(packetBytes)  ETV
-attr interpolationmode  none
-attr title  "received packets, vector(packetBytes)"
-vector 110  Red.modulo[7].wlan[0].queue  queueingTime:vector  ETV
-attr interpolationmode  none
-attr title  "queueing time, vector"
-vector 114  Red.modulo[7].wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
-attr interpolationmode  none
-attr source  packetReceivedFromUpper
-attr title  "packets received from higher layer, vector(packetBytes)"
-vector 113  Red.modulo[7].wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
-attr interpolationmode  none
-attr source  packetSentToLower
-attr title  "packets sent to lower layer, vector(packetBytes)"
-vector 129  Red.modulo[8].wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
-attr interpolationmode  none
-attr source  packetReceivedFromLower
-attr title  "packets received from lower layer, vector(packetBytes)"
-vector 126  Red.modulo[8].wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
-attr interpolationmode  none
-attr source  packetSentToUpper
-attr title  "packets passed to higher layer, vector(packetBytes)"
 vector 33  Red.modulo[2].networkLayer.arp  sentReq:vector  ETV
 attr title  "ARP request sent, vector"
 vector 20  Red.modulo[1].networkLayer.arp  sentReply:vector  ETV
 attr title  "ARP replies sent, vector"
-vector 122  Red.modulo[8].wlan[0].queue  rcvdPk:vector(packetBytes)  ETV
-attr interpolationmode  none
-attr title  "received packets, vector(packetBytes)"
-vector 124  Red.modulo[8].wlan[0].queue  queueingTime:vector  ETV
-attr interpolationmode  none
-attr title  "queueing time, vector"
-vector 128  Red.modulo[8].wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
-attr interpolationmode  none
-attr source  packetReceivedFromUpper
-attr title  "packets received from higher layer, vector(packetBytes)"
-vector 127  Red.modulo[8].wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
-attr interpolationmode  none
-attr source  packetSentToLower
-attr title  "packets sent to lower layer, vector(packetBytes)"
 vector 18  Red.modulo[0].wlan[0].mac  droppedPkNotForUs:vector(packetBytes)  ETV
 attr interpolationmode  none
 attr source  dropPkNotForUs
@@ -217,96 +154,6 @@ vector 0  Red.modulo[0].pingApp[0]  rtt:vector  ETV
 attr interpolationmode  none
 attr title  "ping round-trip time, vector"
 attr unit  s
-vector 101  Red.modulo[6].wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
-attr interpolationmode  none
-attr source  packetReceivedFromLower
-attr title  "packets received from lower layer, vector(packetBytes)"
-vector 102  Red.modulo[6].wlan[0].mac  droppedPkNotForUs:vector(packetBytes)  ETV
-attr interpolationmode  none
-attr source  dropPkNotForUs
-attr title  "packets dropped/not for us, vector(packetBytes)"
-vector 73  Red.modulo[4].wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
-attr interpolationmode  none
-attr source  packetReceivedFromLower
-attr title  "packets received from lower layer, vector(packetBytes)"
-vector 74  Red.modulo[4].wlan[0].mac  droppedPkNotForUs:vector(packetBytes)  ETV
-attr interpolationmode  none
-attr source  dropPkNotForUs
-attr title  "packets dropped/not for us, vector(packetBytes)"
-vector 98  Red.modulo[6].wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
-attr interpolationmode  none
-attr source  packetSentToUpper
-attr title  "packets passed to higher layer, vector(packetBytes)"
-vector 70  Red.modulo[4].wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
-attr interpolationmode  none
-attr source  packetSentToUpper
-attr title  "packets passed to higher layer, vector(packetBytes)"
 vector 1  Red.modulo[0].pingApp[0]  numLost:vector  ETV
 attr interpolationmode  none
 attr title  "pings lost, vector"
-0	11813 496 1292 3365 7.609992459647 18.617997547278 13 0.000688494974 4.42102227455 23.777085503196 78.316195579572
-1	12309 52 2106 3254 11.200445597775 18.616276283767 2 1 2 3 5
-3	12361 410 303 2951 3.195254009217 18.195254009217 16 0 15 120 1240
-4	12771 334 1292 3365 7.609992459647 18.617997547278 13 0 14 88 866
-6	13105 51 1028 2050 7.607310690786 11.199484954424 2 1 1 2 2
-10	13156 821 307 3068 3.198218232298 18.613866754935 30 20 76 1512 98784
-12	13977 894 307 3146 3.198218232298 18.615243272931 30 0 0.001376517996 0.00688258998 7.1055067249195e-006
-13	14871 433 0 3146 0 18.615243272931 17 0 4 32 88
-14	15304 815 332 3362 3.20203443812 18.617997547278 30 20 76 1344 82656
-15	16119 820 308 3147 3.198218232298 18.615243272931 30 30 86 1812 132024
-16	16939 820 308 3147 3.198218232298 18.615243272931 30 20 76 1512 98784
-17	17759 1198 332 3362 3.20203443812 18.617997547278 44 30 86 2800 210128
-18	18957 383 989 3225 7.605120982834 18.615932014625 14 38 86 1156 97592
-19	19340 26 1016 1016 7.607158561287 7.607158561287 1 1 1 1 1
-20	19366 25 970 970 7.604968853335 7.604968853335 1 1 1 1 1
-24	19391 1116 325 3371 3.201914308621 18.617997667952 41 20 76 2236 151568
-26	20507 1187 325 3371 3.201914308621 18.617997667952 41 0 0.000344326366 0.000346771558 1.1856152106127e-007
-27	21694 535 0 3195 0 18.615587885126 21 0 2 12 14
-28	22229 1412 313 3368 3.198338361797 18.617997667952 52 20 76 2464 156352
-29	23641 1117 326 3372 3.201914308621 18.617997667952 41 30 86 2646 200388
-30	24758 1117 326 3372 3.201914308621 18.617997667952 41 20 76 2236 151568
-31	25875 1986 313 3368 3.198338361797 18.617997667952 73 30 86 4638 347748
-32	27861 574 922 3301 7.599878176265 18.61696491111 21 30 86 1654 136916
-33	28435 25 954 954 7.604816603162 7.604816603162 1 1 1 1 1
-34	28460 25 905 905 7.599725926092 7.599725926092 1 1 1 1 1
-38	28485 1034 390 3331 3.527019262559 18.617309173929 38 20 76 2176 150368
-40	29519 1206 390 3345 3.527019262559 18.617653417779 38 0 0.001032756842 0.007573198717 4.7397675117925e-006
-41	30725 910 0 3345 0 18.617653417779 35 0 3 43 81
-42	31635 1164 336 3329 3.202034558794 18.617309173929 43 20 76 2284 152752
-43	32799 1036 391 3347 3.527019262559 18.617653417779 38 30 86 2556 197688
-44	33835 1036 391 3347 3.527019262559 18.617653417779 38 20 76 2176 150368
-45	34871 1518 336 3369 3.202034558794 18.617997667952 56 30 86 3720 285888
-46	36389 354 1068 3369 7.607583070458 18.617997667952 13 30 86 1006 83156
-47	36743 52 887 2039 7.599573744467 11.199332794404 2 1 1 2 2
-52	36795 520 889 3310 7.599573744467 18.616964917433 19 20 76 1180 83632
-54	37315 501 889 3310 7.599573744467 18.616964917433 19 0 0 0 0
-55	37816 10 0 0 0 0 1 0 0 0 0
-56	37826 602 884 3304 7.599573744467 18.616964917433 22 20 76 1248 85216
-57	38428 520 890 3311 7.599573744467 18.616964917433 19 30 86 1370 109132
-58	38948 520 890 3311 7.599573744467 18.616964917433 19 20 76 1180 83632
-59	39468 1067 884 3354 7.599573744467 18.617653424102 39 30 86 2818 225116
-60	40535 465 1009 3354 7.605241277488 18.617653424102 17 30 86 1350 112740
-69	41000 10 0 0 0 0 1 0 0 0 0
-70	41010 28 1914 1914 10.298450995584 10.298450995584 1 20 20 20 400
-73	41038 110 1710 1914 9.196286682707 10.298450995584 4 30 86 288 23088
-74	41148 82 1710 1882 9.196286682707 10.196286665866 3 86 86 258 22188
-83	41230 10 0 0 0 0 1 0 0 0 0
-97	41240 10 0 0 0 0 1 0 0 0 0
-98	41250 28 1902 1902 10.298450898004 10.298450898004 1 20 20 20 400
-101	41278 114 1698 1902 9.196286620096 10.298450898004 4 30 86 288 23088
-102	41392 85 1698 1878 9.196286620096 10.196286571334 3 86 86 258 22188
-108	41477 27 935 935 7.603628843835 7.603628843835 1 20 20 20 400
-110	41504 26 935 935 7.603628843835 7.603628843835 1 0 0 0 0
-111	41530 11 0 0 0 0 1 0 0 0 0
-112	41541 137 868 1034 7.599169978827 7.607310782063 5 20 28 116 2768
-113	41678 27 936 936 7.603628843835 7.603628843835 1 30 30 30 900
-114	41705 27 936 936 7.603628843835 7.603628843835 1 20 20 20 400
-115	41732 918 868 1677 7.599169978827 9.195598256107 33 30 86 2366 187780
-116	42650 781 924 1677 7.599878192628 9.195598256107 28 30 86 2200 182192
-122	43431 27 983 983 7.605112251647 7.605112251647 1 20 20 20 400
-124	43458 26 983 983 7.605112251647 7.605112251647 1 0 0 0 0
-125	43484 11 0 0 0 0 1 0 0 0 0
-126	43495 27 943 943 7.603748970175 7.603748970175 1 20 20 20 400
-127	43522 27 984 984 7.605112251647 7.605112251647 1 30 30 30 900
-128	43549 27 984 984 7.605112251647 7.605112251647 1 20 20 20 400
-129	43576 27 943 943 7.603748970175 7.603748970175 1 30 30 30 900
