@@ -1,0 +1,469 @@
+version 2
+run MassMobility-0-20150209-15:28:48-36824
+attr configname MassMobility
+attr datetime 20150209-15:28:48
+attr experiment MassMobility
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Red
+attr processid 36824
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 23  Red.modulo[0].wlan[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 37  Red.modulo[1].wlan[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 51  Red.modulo[2].wlan[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 65  Red.modulo[3].wlan[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 79  Red.modulo[4].wlan[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 3  Red.modulo[0].pingApp[0]  pingTxSeq:vector  ETV
+attr interpolationmode  none
+attr title  "ping tx seq, vector"
+vector 20  Red.modulo[0].wlan[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 22  Red.modulo[0].wlan[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 26  Red.modulo[0].wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 25  Red.modulo[0].wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 83  Red.modulo[4].wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 80  Red.modulo[4].wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 41  Red.modulo[1].wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 38  Red.modulo[1].wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 69  Red.modulo[3].wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 66  Red.modulo[3].wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 57  Red.modulo[3].networkLayer.arp  sentReq:vector  ETV
+attr title  "ARP request sent, vector"
+vector 62  Red.modulo[3].wlan[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 64  Red.modulo[3].wlan[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 68  Red.modulo[3].wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 67  Red.modulo[3].wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 55  Red.modulo[2].wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 52  Red.modulo[2].wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 27  Red.modulo[0].wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 24  Red.modulo[0].wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 16  Red.modulo[0].networkLayer.arp  sentReply:vector  ETV
+attr title  "ARP replies sent, vector"
+vector 84  Red.modulo[4].wlan[0].mac  droppedPkNotForUs:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, vector(packetBytes)"
+vector 42  Red.modulo[1].wlan[0].mac  droppedPkNotForUs:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, vector(packetBytes)"
+vector 56  Red.modulo[2].wlan[0].mac  droppedPkNotForUs:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, vector(packetBytes)"
+vector 4  Red.modulo[0].pingApp[0]  pingRxSeq:vector  ETV
+attr interpolationmode  none
+attr title  "ping rx seq, vector"
+vector 0  Red.modulo[0].pingApp[0]  rtt:vector  ETV
+attr interpolationmode  none
+attr title  "ping round-trip time, vector"
+attr unit  s
+vector 48  Red.modulo[2].wlan[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 50  Red.modulo[2].wlan[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 54  Red.modulo[2].wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 53  Red.modulo[2].wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 76  Red.modulo[4].wlan[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 78  Red.modulo[4].wlan[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 82  Red.modulo[4].wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 81  Red.modulo[4].wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 34  Red.modulo[1].wlan[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 36  Red.modulo[1].wlan[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 40  Red.modulo[1].wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 39  Red.modulo[1].wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+0	315	3.198606174526	0.003352165309
+0	487	4.195942838507	0.00068882929
+0	592	5.195942962165	0.000688952948
+3	193	3.195254009217	0
+3	455	4.195254009217	1
+3	561	5.195254009217	2
+3	650	6.195254009217	3
+3	755	7.195254009217	4
+3	965	8.195254009217	5
+4	315	3.198606174526	0
+4	487	4.195942838507	1
+4	592	5.195942962165	2
+16	234	3.197644913642	1
+20	197	3.1973722832	20
+20	236	3.197644913642	28
+20	278	3.197917544084	76
+20	458	4.195254009217	76
+20	564	5.195254009217	76
+20	653	6.195254009217	76
+20	685	6.296617290689	20
+20	759	7.197171216823	20
+20	825	7.519314852849	20
+20	901	7.997217933182	20
+20	992	8.636940990025	20
+22	197	3.1973722832	0
+22	236	3.197644913642	0
+22	278	3.197917544084	0
+22	458	4.195254009217	0
+22	564	5.195254009217	0
+22	653	6.195254009217	0
+22	685	6.296617290689	0
+22	759	7.197171216823	0
+22	825	7.519314852849	0
+22	901	7.997217933182	0
+22	992	8.636940990025	0
+23	0	0	0
+24	232	3.197644913642	28
+24	275	3.197917544084	20
+24	312	3.198606174526	76
+24	332	3.199534840599	20
+24	369	3.200730272321	20
+24	386	3.200841952745	20
+24	484	4.195942838507	76
+24	535	4.86389965885	20
+24	589	5.195942962165	76
+24	781	7.199799875887	20
+24	797	7.20137047076	20
+24	847	7.521955433352	20
+24	861	7.522199686182	20
+24	932	8.001639131524	20
+24	947	8.00208630756	20
+24	1013	8.637617055931	20
+24	1028	8.640422754025	20
+25	198	3.1973722832	30
+25	237	3.197644913642	38
+25	279	3.197917544084	86
+25	459	4.195254009217	86
+25	565	5.195254009217	86
+25	654	6.195254009217	86
+25	686	6.296617290689	30
+25	760	7.197171216823	30
+25	826	7.519314852849	30
+25	902	7.997217933182	30
+25	993	8.636940990025	30
+26	198	3.1973722832	20
+26	237	3.197644913642	28
+26	279	3.197917544084	76
+26	459	4.195254009217	76
+26	565	5.195254009217	76
+26	654	6.195254009217	76
+26	686	6.296617290689	20
+26	760	7.197171216823	20
+26	826	7.519314852849	20
+26	902	7.997217933182	20
+26	993	8.636940990025	20
+27	232	3.197644913642	38
+27	275	3.197917544084	30
+27	312	3.198606174526	86
+27	332	3.199534840599	30
+27	369	3.200730272321	30
+27	386	3.200841952745	30
+27	484	4.195942838507	86
+27	535	4.86389965885	30
+27	589	5.195942962165	86
+27	781	7.199799875887	30
+27	797	7.20137047076	30
+27	847	7.521955433352	30
+27	861	7.522199686182	30
+27	932	8.001639131524	30
+27	947	8.00208630756	30
+27	1013	8.637617055931	30
+27	1028	8.640422754025	30
+34	356	3.20072185326	20
+34	774	7.199679709134	20
+34	855	7.522079506819	20
+34	936	8.001966111954	20
+34	1007	8.63749684622	20
+36	356	3.20072185326	0
+36	774	7.199679709134	0
+36	855	7.522079506819	0
+36	936	8.001966111954	0
+36	1007	8.63749684622	0
+37	0	0	0
+38	210	3.197492382685	20
+38	245	3.197645012132	28
+38	336	3.199534844825	20
+38	365	3.200730259848	20
+38	693	6.296737427875	20
+38	766	7.197291383576	20
+38	805	7.201370630693	20
+38	832	7.519435032212	20
+38	908	7.997338128788	20
+38	999	8.637061199736	20
+39	357	3.20072185326	30
+39	775	7.199679709134	30
+39	856	7.522079506819	30
+39	937	8.001966111954	30
+39	1008	8.63749684622	30
+40	357	3.20072185326	20
+40	775	7.199679709134	20
+40	856	7.522079506819	20
+40	937	8.001966111954	20
+40	1008	8.63749684622	20
+41	210	3.197492382685	30
+41	245	3.197645012132	38
+41	259	3.197797013127	38
+41	285	3.197917642574	30
+41	295	3.198261643569	86
+41	319	3.198606273016	86
+41	336	3.199534844825	30
+41	365	3.200730259848	30
+41	467	4.195598088746	86
+41	489	4.195942917748	86
+41	573	5.195598105758	86
+41	661	6.195598146671	86
+41	693	6.296737427875	30
+41	766	7.197291383576	30
+41	805	7.201370630693	30
+41	832	7.519435032212	30
+41	908	7.997338128788	30
+41	999	8.637061199736	30
+42	259	3.197797013127	38
+42	285	3.197917642574	30
+42	295	3.198261643569	86
+42	319	3.198606273016	86
+42	467	4.195598088746	86
+42	489	4.195942917748	86
+42	573	5.195598105758	86
+42	661	6.195598146671	86
+48	323	3.19941451617	20
+48	865	7.524795687157	20
+48	941	8.001994281744	20
+48	1032	8.64052375555	20
+50	323	3.19941451617	0
+50	865	7.524795687157	0
+50	941	8.001994281744	0
+50	1032	8.64052375555	0
+51	0	0	0
+52	223	3.197492607629	20
+52	250	3.197645038976	28
+52	373	3.200730571174	20
+52	390	3.200842181915	20
+52	701	6.296737764892	20
+52	801	7.201370538897	20
+52	851	7.521955464339	20
+52	928	8.001639101451	20
+52	1024	8.640422663555	20
+53	324	3.19941451617	30
+53	866	7.524795687157	30
+53	942	8.001994281744	30
+53	1033	8.64052375555	30
+54	324	3.19941451617	20
+54	866	7.524795687157	20
+54	942	8.001994281744	20
+54	1033	8.64052375555	20
+55	223	3.197492607629	30
+55	250	3.197645038976	38
+55	268	3.197797238071	38
+55	288	3.197917669418	30
+55	305	3.198261868513	86
+55	321	3.19860629986	86
+55	373	3.200730571174	30
+55	390	3.200842181915	30
+55	471	4.195598372908	86
+55	577	5.195598417964	86
+55	665	6.195598477286	86
+55	701	6.296737764892	30
+55	801	7.201370538897	30
+55	851	7.521955464339	30
+55	928	8.001639101451	30
+55	1024	8.640422663555	30
+56	268	3.197797238071	38
+56	288	3.197917669418	30
+56	305	3.198261868513	86
+56	321	3.19860629986	86
+56	471	4.195598372908	86
+56	577	5.195598417964	86
+56	665	6.195598477286	86
+57	217	3.197492598421	1
+62	219	3.197492598421	28
+62	264	3.197797228863	20
+62	301	3.198261859305	76
+62	477	4.195598423862	76
+62	529	4.863779205655	20
+62	583	5.195598485691	76
+64	219	3.197492598421	0
+64	264	3.197797228863	0
+64	301	3.198261859305	0
+64	477	4.195598423862	0
+64	529	4.863779205655	0
+64	583	5.195598485691	0
+65	0	0	0
+66	214	3.197492598421	20
+66	261	3.197797228863	28
+66	297	3.198261859305	76
+66	344	3.199534956725	20
+66	377	3.200730574266	20
+66	394	3.200842266971	20
+66	473	4.195598423862	76
+66	579	5.195598485691	76
+67	220	3.197492598421	38
+67	265	3.197797228863	30
+67	302	3.198261859305	86
+67	478	4.195598423862	86
+67	530	4.863779205655	30
+67	584	5.195598485691	86
+68	220	3.197492598421	28
+68	265	3.197797228863	20
+68	302	3.198261859305	76
+68	478	4.195598423862	76
+68	530	4.863779205655	20
+68	584	5.195598485691	76
+69	214	3.197492598421	30
+69	261	3.197797228863	38
+69	297	3.198261859305	86
+69	344	3.199534956725	30
+69	377	3.200730574266	30
+69	394	3.200842266971	30
+69	473	4.195598423862	86
+69	579	5.195598485691	86
+76	348	3.200610187001	20
+76	789	7.201250156375	20
+76	840	7.521835086029	20
+76	921	8.001518729275	20
+76	1017	8.640302301716	20
+78	348	3.200610187001	0
+78	789	7.201250156375	0
+78	840	7.521835086029	0
+78	921	8.001518729275	0
+78	1017	8.640302301716	0
+79	0	0	0
+80	206	3.19749236852	20
+80	240	3.197644985686	28
+80	340	3.199534900343	20
+80	382	3.200841926107	20
+80	697	6.296737532223	20
+80	770	7.197291531208	20
+80	785	7.199800183452	20
+80	836	7.519435200172	20
+80	871	7.524916065467	20
+80	912	7.997338335431	20
+80	952	8.00211465392	20
+80	1003	8.637061442334	20
+80	1038	8.640644117389	20
+81	349	3.200610187001	30
+81	790	7.201250156375	30
+81	841	7.521835086029	30
+81	922	8.001518729275	30
+81	1018	8.640302301716	30
+82	349	3.200610187001	20
+82	790	7.201250156375	20
+82	841	7.521835086029	20
+82	922	8.001518729275	20
+82	1018	8.640302301716	20
+83	206	3.19749236852	30
+83	240	3.197644985686	38
+83	257	3.197796998962	38
+83	282	3.197917616128	30
+83	293	3.198261629404	86
+83	317	3.19860624657	86
+83	340	3.199534900343	30
+83	382	3.200841926107	30
+83	469	4.195598122028	86
+83	575	5.195598174151	86
+83	663	6.195598243245	86
+83	697	6.296737532223	30
+83	770	7.197291531208	30
+83	785	7.199800183452	30
+83	836	7.519435200172	30
+83	871	7.524916065467	30
+83	912	7.997338335431	30
+83	952	8.00211465392	30
+83	1003	8.637061442334	30
+83	1038	8.640644117389	30
+84	257	3.197796998962	38
+84	282	3.197917616128	30
+84	293	3.198261629404	86
+84	317	3.19860624657	86
+84	469	4.195598122028	86
+84	575	5.195598174151	86
+84	663	6.195598243245	86

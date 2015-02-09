@@ -119,3 +119,5 @@ tkenv-plugin-path = ../../../etc/plugins
 
 **.aodv.helloInterval = 5s
 **.aodv.useHelloMessages = true
+**.aodv.allowedHelloLoss = 2
+**.aodv.useLocalRepair = true

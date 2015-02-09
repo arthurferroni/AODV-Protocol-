@@ -91,7 +91,7 @@ tkenv-plugin-path = ../../../etc/plugins
 **.mobility.constraintAreaMinZ = 0m
 **.mobility.constraintAreaMaxZ = 0m
 
-*.numNodes = 5
+*.numNodes = 10
 
 **.modulo[*].mobility.changeInterval = truncnormal(2s, 0.5s)
 **.modulo[*].mobility.changeAngleBy = normal(0deg, 30deg)
@@ -119,3 +119,5 @@ tkenv-plugin-path = ../../../etc/plugins
 
 **.aodv.helloInterval = 5s
 **.aodv.useHelloMessages = true
+**.aodv.allowedHelloLoss = 2
+**.aodv.useLocalRepair = true
