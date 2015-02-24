@@ -50,3 +50,89 @@ network Red
             @display("p=46,20;is=vs");
         }
 }
+//
+// TODO auto-generated type
+//
+network Red1
+{
+    parameters:
+        int numNodes = default(1);
+
+        @display("bgb=564,255");
+    submodules:
+        modulo: Modulo {
+            @display("p=263,189;i=device/pocketpc;is=vs");
+        }
+
+
+        configurator: IPv4NetworkConfigurator {
+            parameters:
+                addDefaultRoutes = false;
+                addStaticRoutes = false;
+                addSubnetRoutes = false;
+                config = xml("<config><interface hosts='*' address='172.16.x.x' netmask = '255.255.0.0' /> </config>");
+                @display("p=127,20;is=vs");
+        }
+        channelControl: IdealChannelModel {
+            @display("p=46,20;is=vs");
+        }
+
+        modulo1: Modulo {
+            @display("p=333,149;i=device/pocketpc;is=vs");
+        }
+
+
+        modulo2: Modulo {
+            @display("p=415,174;i=device/pocketpc;is=vs");
+        }
+
+
+        modulo3: Modulo {
+            @display("p=449,134;i=device/pocketpc;is=vs");
+        }
+
+
+}
+//
+// TODO auto-generated type
+//
+network Static
+{
+    parameters:
+        int numNodes = default(1);
+
+        @display("bgb=564,255");
+    submodules:
+        modulo: Modulo {
+            @display("p=142,174;i=device/pocketpc;is=vs");
+        }
+
+
+        configurator: IPv4NetworkConfigurator {
+            parameters:
+                addDefaultRoutes = false;
+                addStaticRoutes = false;
+                addSubnetRoutes = false;
+                config = xml("<config><interface hosts='*' address='172.16.x.x' netmask = '255.255.0.0' /> </config>");
+                @display("p=127,20;is=vs");
+        }
+        channelControl: IdealChannelModel {
+            @display("p=46,20;is=vs");
+        }
+
+        modulo1: Modulo {
+            @display("p=85,209;i=device/pocketpc;is=vs");
+        }
+
+
+        modulo2: Modulo {
+            @display("p=273,174;i=device/pocketpc;is=vs");
+        }
+
+
+        modulo3: Modulo {
+            @display("p=190,224;i=device/pocketpc;is=vs");
+        }
+
+
+}

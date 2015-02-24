@@ -1,0 +1,159 @@
+version 2
+run Stationary-TEST-0-20150224-11:44:23-81556
+attr configname Stationary-TEST
+attr datetime 20150224-11:44:23
+attr experiment Stationary-TEST
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Static
+attr processid 81556
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 8  Static.modulo.wlan[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 27  Static.modulo1.wlan[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 41  Static.modulo2.wlan[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 55  Static.modulo3.wlan[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 17  Static.modulo1.pingApp[0]  pingTxSeq:vector  ETV
+attr interpolationmode  none
+attr title  "ping tx seq, vector"
+vector 24  Static.modulo1.wlan[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 26  Static.modulo1.wlan[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 30  Static.modulo1.wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 29  Static.modulo1.wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 12  Static.modulo.wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 9  Static.modulo.wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 45  Static.modulo2.wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 42  Static.modulo2.wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 33  Static.modulo2.networkLayer.arp  sentReq:vector  ETV
+attr title  "ARP request sent, vector"
+vector 38  Static.modulo2.wlan[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 40  Static.modulo2.wlan[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 44  Static.modulo2.wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 43  Static.modulo2.wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 31  Static.modulo1.wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 28  Static.modulo1.wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 20  Static.modulo1.networkLayer.arp  sentReply:vector  ETV
+attr title  "ARP replies sent, vector"
+vector 59  Static.modulo3.wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 56  Static.modulo3.wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 13  Static.modulo.wlan[0].mac  droppedPkNotForUs:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, vector(packetBytes)"
+vector 60  Static.modulo3.wlan[0].mac  droppedPkNotForUs:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, vector(packetBytes)"
+8	0	0	0
+9	67	3.198338455412	20
+9	84	3.198490595088	28
+12	67	3.198338455412	30
+12	84	3.198490595088	38
+12	103	3.198643017984	38
+12	116	3.19876315766	30
+12	130	3.199107580556	86
+13	103	3.198643017984	38
+13	116	3.19876315766	30
+13	130	3.199107580556	86
+17	56	3.195254009217	0
+20	90	3.19849079487	1
+24	60	3.198218232298	20
+24	92	3.19849079487	28
+24	121	3.198763357442	76
+26	60	3.198218232298	0
+26	92	3.19849079487	0
+26	121	3.198763357442	0
+27	0	0	0
+28	88	3.19849079487	28
+28	118	3.198763357442	20
+29	61	3.198218232298	30
+29	93	3.19849079487	38
+29	122	3.198763357442	86
+30	61	3.198218232298	20
+30	93	3.19849079487	28
+30	122	3.198763357442	76
+31	88	3.19849079487	38
+31	118	3.198763357442	30
+33	74	3.198338513584	1
+38	76	3.198338513584	28
+38	108	3.198643076156	20
+38	136	3.199107638728	76
+40	76	3.198338513584	0
+40	108	3.198643076156	0
+40	136	3.199107638728	0
+41	0	0	0
+42	71	3.198338513584	20
+42	105	3.198643076156	28
+42	132	3.199107638728	76
+43	77	3.198338513584	38
+43	109	3.198643076156	30
+43	137	3.199107638728	86
+44	77	3.198338513584	28
+44	109	3.198643076156	20
+44	137	3.199107638728	76
+45	71	3.198338513584	30
+45	105	3.198643076156	38
+45	132	3.199107638728	86
+55	0	0	0
+56	96	3.198490803176	28
+59	96	3.198490803176	38
+59	125	3.198763365748	30
+60	125	3.198763365748	30

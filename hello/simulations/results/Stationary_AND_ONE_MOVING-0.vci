@@ -1,0 +1,201 @@
+file 24194 1424801219                                           
+version 2
+run Stationary_AND_ONE_MOVING-0-20150224-15:06:06-90572
+attr configname Stationary_AND_ONE_MOVING
+attr datetime 20150224-15:06:06
+attr experiment Stationary_AND_ONE_MOVING
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Static
+attr processid 90572
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 8  Static.modulo.wlan[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 27  Static.modulo1.wlan[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 41  Static.modulo2.wlan[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 55  Static.modulo3.wlan[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 17  Static.modulo1.pingApp[0]  pingTxSeq:vector  ETV
+attr interpolationmode  none
+attr title  "ping tx seq, vector"
+vector 24  Static.modulo1.wlan[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 26  Static.modulo1.wlan[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 30  Static.modulo1.wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 29  Static.modulo1.wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 12  Static.modulo.wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 9  Static.modulo.wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 45  Static.modulo2.wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 42  Static.modulo2.wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 33  Static.modulo2.networkLayer.arp  sentReq:vector  ETV
+attr title  "ARP request sent, vector"
+vector 38  Static.modulo2.wlan[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 40  Static.modulo2.wlan[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 44  Static.modulo2.wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 43  Static.modulo2.wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 59  Static.modulo3.wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 56  Static.modulo3.wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 31  Static.modulo1.wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 28  Static.modulo1.wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 20  Static.modulo1.networkLayer.arp  sentReply:vector  ETV
+attr title  "ARP replies sent, vector"
+vector 13  Static.modulo.wlan[0].mac  droppedPkNotForUs:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, vector(packetBytes)"
+vector 60  Static.modulo3.wlan[0].mac  droppedPkNotForUs:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, vector(packetBytes)"
+vector 18  Static.modulo1.pingApp[0]  pingRxSeq:vector  ETV
+attr interpolationmode  none
+attr title  "ping rx seq, vector"
+vector 14  Static.modulo1.pingApp[0]  rtt:vector  ETV
+attr interpolationmode  none
+attr title  "ping round-trip time, vector"
+attr unit  s
+vector 5  Static.modulo.wlan[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 7  Static.modulo.wlan[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 11  Static.modulo.wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 10  Static.modulo.wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 52  Static.modulo3.wlan[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 54  Static.modulo3.wlan[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 58  Static.modulo3.wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 57  Static.modulo3.wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 48  Static.modulo3.networkLayer.arp  sentReply:vector  ETV
+attr title  "ARP replies sent, vector"
+vector 47  Static.modulo3.networkLayer.arp  sentReq:vector  ETV
+attr title  "ARP request sent, vector"
+vector 1  Static.modulo.networkLayer.arp  sentReply:vector  ETV
+attr title  "ARP replies sent, vector"
+vector 32  Static.modulo1.wlan[0].mac  droppedPkNotForUs:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, vector(packetBytes)"
+vector 46  Static.modulo2.wlan[0].mac  droppedPkNotForUs:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  dropPkNotForUs
+attr title  "packets dropped/not for us, vector(packetBytes)"
+vector 0  Static.modulo.networkLayer.arp  sentReq:vector  ETV
+attr title  "ARP request sent, vector"
+vector 15  Static.modulo1.pingApp[0]  numLost:vector  ETV
+attr interpolationmode  none
+attr title  "pings lost, vector"
+0	7473 25 850 850 16.574355268241 16.574355268241 1 1 1 1 1
+1	7498 25 824 824 16.569732745123 16.569732745123 1 1 1 1 1
+5	7523 549 154 1161 3.202388376316 16.577877794985 21 20 76 1052 68304
+7	8072 565 154 1164 3.202388376316 16.577877994101 19 0 0.00068849472 0.001721500572 8.2964254744784e-007
+8	8637 471 0 1164 0 16.577877994101 19 0 3 27 57
+9	9108 774 67 1157 3.19966396043 16.577877794985 30 20 76 1240 72288
+10	9882 514 155 1165 3.202388376316 16.577877994101 19 30 86 1090 76652
+11	10396 514 155 1165 3.202388376316 16.577877994101 19 20 76 900 56752
+12	10910 1253 67 1157 3.19966396043 16.577877794985 47 30 86 2850 207420
+13	12163 449 103 1129 3.199968511782 16.577533635549 17 30 86 1310 107332
+14	12612 230 152 1071 3.200777369026 16.576845308595 6 0.000688103742 7.381591299378 7.389867721387 54.487922513395
+15	12842 27 1071 1071 16.576845308595 16.576845308595 1 1 1 1 1
+17	12869 360 56 728 3.195254009217 16.195254009217 14 0 13 91 819
+18	13229 152 152 1071 3.200777369026 16.576845308595 6 0 6 16 66
+20	13381 50 94 861 3.199816288668 16.574507491355 2 1 1 2 2
+24	13431 633 60 893 3.199543737316 16.574779937583 24 20 76 1280 85632
+26	14064 702 60 1097 3.199543737316 16.577189499381 24 0 0.002409561798 0.009638247192 1.658853730966e-005
+27	14766 377 0 1097 0 16.577189499381 15 0 7 49 231
+28	15143 499 92 1164 3.199816288668 16.577877994101 19 20 76 788 46000
+29	15642 636 61 1098 3.199543737316 16.577189499381 24 30 86 1520 113632
+30	16278 636 61 1098 3.199543737316 16.577189499381 24 20 76 1280 85632
+31	16914 691 92 1164 3.199816288668 16.577877994101 26 30 86 1532 109480
+32	17605 192 833 1137 16.569884968237 16.577533762905 7 38 86 554 45820
+33	17797 50 74 772 3.199664012992 16.568454281732 2 1 1 2 2
+38	17847 371 76 1125 3.199664012992 16.577533563789 14 20 76 800 54752
+40	18218 357 76 1125 3.199664012992 16.577533563789 14 0 0 0 0
+41	18575 10 0 0 0 0 1 0 0 0 0
+42	18585 398 71 1119 3.199664012992 16.577533563789 15 20 76 828 55536
+43	18983 371 77 1126 3.199664012992 16.577533563789 14 30 86 940 72152
+44	19354 371 77 1126 3.199664012992 16.577533563789 14 20 76 800 54752
+45	19725 509 71 1151 3.199664012992 16.577877723225 19 30 86 1266 96684
+46	20234 111 845 1151 16.570005135755 16.577877723225 4 30 86 288 23088
+47	20345 26 809 809 16.569580513927 16.569580513927 1 1 1 1 1
+48	20371 26 786 786 16.568606441168 16.568606441168 1 1 1 1 1
+52	20397 518 245 1154 4.849309157406 16.577877723225 19 20 76 956 62128
+54	20915 519 245 1157 4.849309157406 16.577877794985 17 0 0.000688318872 0.002409267654 1.3029140367558e-006
+55	21434 386 0 1157 0 16.577877794985 15 0 3 21 39
+56	21820 593 84 1152 3.199816152917 16.577877723225 22 20 76 1032 64096
+57	22413 462 246 1158 4.849309157406 16.577877794985 17 30 86 974 68356
+58	22875 462 246 1158 4.849309157406 16.577877794985 17 20 76 804 50576
+59	23337 725 84 1152 3.199816152917 16.577877723225 27 30 86 1570 110924
+60	24062 132 117 1073 3.200088704269 16.576845316677 5 30 86 318 23988

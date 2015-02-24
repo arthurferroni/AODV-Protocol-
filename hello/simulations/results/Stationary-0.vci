@@ -1,0 +1,122 @@
+file 14231 1423586865                                           
+version 2
+run Stationary-0-20150210-14:43:03-48724
+attr configname Stationary
+attr datetime 20150210-14:43:03
+attr experiment Stationary
+attr inifile omnetpp.ini
+attr iterationvars ""
+attr iterationvars2 $repetition=0
+attr measurement ""
+attr network Red1
+attr processid 48724
+attr repetition 0
+attr replication #0
+attr resultdir results
+attr runnumber 0
+attr seedset 0
+
+vector 13  Red1.modulo.wlan[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 27  Red1.modulo1.wlan[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 41  Red1.modulo2.wlan[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 55  Red1.modulo3.wlan[0].queue  queueLength:vector  ETV
+attr interpolationmode  sample-hold
+attr title  "queue length, vector"
+vector 3  Red1.modulo.pingApp[0]  pingTxSeq:vector  ETV
+attr interpolationmode  none
+attr title  "ping tx seq, vector"
+vector 10  Red1.modulo.wlan[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 12  Red1.modulo.wlan[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 16  Red1.modulo.wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 15  Red1.modulo.wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 45  Red1.modulo2.wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 42  Red1.modulo2.wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 38  Red1.modulo2.wlan[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 40  Red1.modulo2.wlan[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 44  Red1.modulo2.wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 43  Red1.modulo2.wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+vector 17  Red1.modulo.wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 14  Red1.modulo.wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 31  Red1.modulo1.wlan[0].mac  rcvdPkFromLL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromLower
+attr title  "packets received from lower layer, vector(packetBytes)"
+vector 28  Red1.modulo1.wlan[0].mac  passedUpPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToUpper
+attr title  "packets passed to higher layer, vector(packetBytes)"
+vector 24  Red1.modulo1.wlan[0].queue  rcvdPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr title  "received packets, vector(packetBytes)"
+vector 26  Red1.modulo1.wlan[0].queue  queueingTime:vector  ETV
+attr interpolationmode  none
+attr title  "queueing time, vector"
+vector 30  Red1.modulo1.wlan[0].mac  rcvdPkFromHL:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetReceivedFromUpper
+attr title  "packets received from higher layer, vector(packetBytes)"
+vector 29  Red1.modulo1.wlan[0].mac  sentDownPk:vector(packetBytes)  ETV
+attr interpolationmode  none
+attr source  packetSentToLower
+attr title  "packets sent to lower layer, vector(packetBytes)"
+3	4408 7604 149 12861 3.195254009217 270.195254009217 268 0 267 35778 6380410
+10	12012 157 153 628 3.198218232298 10.557441945266 6 20 20 120 2400
+12	12169 151 153 628 3.198218232298 10.557441945266 6 0 0 0 0
+13	12320 10 0 0 0 0 1 0 0 0 0
+14	12330 182 173 644 3.202034244632 10.559169701636 7 20 20 140 2800
+15	12512 157 154 629 3.198218232298 10.557441945266 6 30 30 180 5400
+16	12669 157 154 629 3.198218232298 10.557441945266 6 20 20 120 2400
+17	12826 182 173 644 3.202034244632 10.559169701636 7 30 30 210 6300
+24	13008 53 475 638 7.601721372662 10.559049659964 2 20 20 40 800
+26	13061 51 475 638 7.601721372662 10.559049659964 2 0 0 0 0
+27	13112 10 0 0 0 0 1 0 0 0 0
+28	13122 79 448 634 7.598491902087 10.557561986938 3 20 20 60 1200
+29	13201 53 476 639 7.601721372662 10.559049659964 2 30 30 60 1800
+30	13254 53 476 639 7.601721372662 10.559049659964 2 20 20 40 800
+31	13307 79 448 634 7.598491902087 10.557561986938 3 30 30 90 2700
+38	13386 130 167 460 3.201914215781 7.600414008138 5 20 20 100 2000
+40	13516 125 167 460 3.201914215781 7.600414008138 5 0 0 0 0
+41	13641 10 0 0 0 0 1 0 0 0 0
+42	13651 155 159 486 3.198338268957 7.601841582963 6 20 20 120 2400
+43	13806 130 168 461 3.201914215781 7.600414008138 5 30 30 150 4500
+44	13936 130 168 461 3.201914215781 7.600414008138 5 20 20 100 2000
+45	14066 155 159 486 3.198338268957 7.601841582963 6 30 30 180 5400
+55	14221 10 0 0 0 0 1 0 0 0 0
